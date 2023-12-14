@@ -37,7 +37,7 @@ const port = 7001;
 const cors = require('cors');
 
 app.use(cors({
-    origin: 'http://localhost:7001',  // application origin
+    origin: 'http://16.171.138.189:7001',  // application origin
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   }));
