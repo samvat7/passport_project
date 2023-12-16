@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {}
+        body {
+        }
+
 
         #root {
 
             margin: 0;
         }
 
-        nav img{
+        nav {
+            background-color: white;
+        }
+
+        nav img {
 
             height: 50px;
             width: 160px;
         }
+
         #submit-button {
 
             background-color: #333;
@@ -30,12 +37,12 @@
             font-size: 2vw;
         }
 
-        #experienceName-div{
+        #experienceName-div {
 
             width: 100%;
         }
 
-        #experienceName-div i{
+        #experienceName-div i {
 
             font-size: 2rem;
         }
@@ -71,7 +78,7 @@
             justify-content: space-evenly;
         }
 
-        #event-details-div{
+        #event-details-div {
 
             width: 50%;
         }
@@ -89,10 +96,10 @@
 
             font-size: 2rem;
 
-            margin-bottom: -5vh;
+            margin-bottom: -30px;
         }
 
-        #start-time-div input{
+        #start-time-div input {
 
             transform: translateX(-5px);
             width: 106%;
@@ -115,12 +122,12 @@
             font-size: 2rem;
         }
 
-        #numberOfPeople-div{
+        #numberOfPeople-div {
             display: flex;
             flex-direction: column;
         }
 
-        #numberOfPeople-div i{
+        #numberOfPeople-div i {
             font-size: 2rem;
         }
 
@@ -154,7 +161,7 @@
             justify-content: space-between;
         }
 
-        
+
 
         .create-event-container {
             background-color: #fff;
@@ -246,12 +253,14 @@
 <body>
 
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
             <img src="/passprt-logo.jpg" alt="passprt-logo">
 
     </div>
     </nav>
-    <div class="create-event-container">
+    <div>
+        
+        <div class="create-event-container">
         <p id="create-page-heading">Book Your Ticket</p>
         <form id="createEventForm" method="post" action="/generate-ticket">
             <div id="event-form-main-div">
@@ -306,7 +315,7 @@
                                 name="customerName" placeholder="Full Name">
                         </div>
 
-                        <div id="numberOfPeople-div" >
+                        <div id="numberOfPeople-div">
                             <span><i class="fa-solid fa-users"></i> </span>
                             <input type="number" id="numberOfPeople-textarea" name="numberOfPeople"
                                 placeholder="Number of People">
@@ -325,6 +334,8 @@
 
         </form>
     </div>
+    </div>
+    
     </div>
 
 
@@ -392,6 +403,8 @@
                     })
                     .catch(error => console.error('Error:', error));
             });
+
+            document.getElementById('nav-bar').style.backgroundColor = 'white';
         });
     </script>
 </body>
