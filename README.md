@@ -1,4 +1,4 @@
-# passport_project
+# passprt_project
 
 ## Live Link: http://51.20.53.245:7001/
 
@@ -21,12 +21,12 @@
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/passport_project.git
+   git clone https://github.com/samvat7/passport_project.git
    ```
 
 2. Navigate to the project directory:
    ```sh
-   cd passport_project
+   cd passprt_project
    ```
 
 3. Install dependencies:
