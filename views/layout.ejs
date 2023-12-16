@@ -15,7 +15,7 @@
         #submit-button {
 
             background-color: #333;
-            font-size: 1vw;
+            font-size: 2rem;
         }
 
 
@@ -25,12 +25,20 @@
             font-size: 2vw;
         }
 
+        #experienceName-div{
+
+            width: 100%;
+        }
+
+        #experienceName-div i{
+
+            font-size: 2rem;
+        }
+
         #experienceName {
 
-            border: none;
-            font-size: 1.5vh;
             font-family: 'Roboto', sans-serif;
-            border: #333 solid 1px;
+            width: 100%;
         }
 
 
@@ -58,63 +66,63 @@
             justify-content: space-evenly;
         }
 
+        #event-details-div{
+
+            width: 50%;
+        }
+
         #start-time-div {
 
             display: flex;
 
             flex-direction: column;
-
-            vertical-align: middle;
         }
 
         #start-time-div span {
 
             position: relative;
 
-            transform: translateY(1.75vw);
+            font-size: 2rem;
 
-            font-size: 100%;
+            margin-bottom: -5vh;
+        }
 
-            margin-right: 7px;
+        #start-time-div input{
 
-            width: 30%;
+            transform: translateX(-5px);
+            width: 106%;
         }
 
 
-        #event-location-div {
+        #full-name-div {
 
-            padding: -10px;
 
             display: flex;
 
             flex-direction: column;
 
-            vertical-align: middle;
+            margin-bottom: 1rem;
 
         }
 
-        #event-location-div i {
-
-            transform: translateY(1vh);
-
-            margin-right: 1vw;
+        #full-name-div i {
 
             font-size: 2rem;
         }
 
+        #numberOfPeople-div{
+            display: flex;
+            flex-direction: column;
+        }
 
-        #event-location-div input {
-
-            height: 2vw;
+        #numberOfPeople-div i{
+            font-size: 2rem;
         }
 
         #numberOfPeople-textarea {
 
-            padding: 0;
 
-            height: 1.4vw;
-
-            width: 10vw;
+            width: 100%;
         }
 
         #visibility-div {
@@ -141,12 +149,7 @@
             justify-content: space-between;
         }
 
-        #numberOfPeople-div span {
-
-            transform: translateY(5px);
-
-
-        }
+        
 
         .create-event-container {
             background-color: #fff;
@@ -244,12 +247,13 @@
     </div>
     </nav>
     <div class="create-event-container">
-        <p id="create-page-heading">Create Event Page</p>
+        <p id="create-page-heading">Book Your Ticket</p>
         <form id="createEventForm" method="post" action="/generate-ticket">
             <div id="event-form-main-div">
                 <div id="event-form-child-div">
                     <div id="event-details-div">
-                        <div>
+                        <div id="experienceName-div">
+                            <span><i class="fa-solid fa-ticket"></i></span>
                             <input type="text" id="experienceName" name="experienceName" placeholder="Experience Name"
                                 required>
                         </div>
@@ -292,12 +296,12 @@
 
                     <div id="event-preview-div">
 
-                        <div id="event-location-div">
+                        <div id="full-name-div">
                             <i class="fa-solid fa-circle-user"></i></i><input type="text" id="customerName"
                                 name="customerName" placeholder="Full Name">
                         </div>
 
-                        <div id="numberOfPeople-div" style="display: flex;flex-direction: column;">
+                        <div id="numberOfPeople-div" >
                             <span><i class="fa-solid fa-users"></i> </span>
                             <input type="number" id="numberOfPeople-textarea" name="numberOfPeople"
                                 placeholder="Number of People">
@@ -307,7 +311,7 @@
                 </div>
 
                 <div>
-                    <button type="submit" id="submit-button">Create Event</button>
+                    <button type="submit" id="submit-button">Download Ticket</button>
                 </div>
             </div>
 
