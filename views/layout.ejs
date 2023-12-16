@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
+            display: flex;
+            flex-direction: column;
         }
 
 
@@ -14,11 +16,15 @@
             margin: 0;
         }
 
-        nav {
-            background-color: white;
+        #nav-bar{
+
+            height: 60px;
+            width: 100%;
+            border-bottom: #333 solid 1px;
+            padding: 0;
         }
 
-        nav img {
+        #nav-bar img {
 
             height: 50px;
             width: 160px;
@@ -252,12 +258,11 @@
 
 <body>
 
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
+    <div id="nav-bar">
             <img src="/passprt-logo.jpg" alt="passprt-logo">
 
     </div>
-    </nav>
+    
     <div>
         
         <div class="create-event-container">
